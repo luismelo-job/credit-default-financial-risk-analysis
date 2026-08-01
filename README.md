@@ -1,5 +1,12 @@
 # Credit Default & Financial Risk Analysis
 
+
+![SQL](https://img.shields.io/badge/SQL-Expert-blue?style=for-the-badge)
+![Google BigQuery](https://img.shields.io/badge/Google_BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
+![Data Analysis](https://img.shields.io/badge/Data_Analysis-00897B?style=for-the-badge)
+![Financial Risk](https://img.shields.io/badge/Financial_Risk-FF6F00?style=for-the-badge)
+![Business Intelligence](https://img.shields.io/badge/Business_Intelligence-5E35B1?style=for-the-badge)
+
 ## Overview
 
 This project demonstrates an end-to-end SQL analysis using **Google BigQuery** to evaluate a portfolio of **300 delinquent loan accounts**. The objective was to identify credit risk patterns, assess financial exposure, and generate actionable business insights to support credit risk management.
