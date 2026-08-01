@@ -1,19 +1,33 @@
 # Credit Default & Financial Risk Analysis
 
-
 ![SQL](https://img.shields.io/badge/SQL-Expert-blue?style=for-the-badge)
 ![Google BigQuery](https://img.shields.io/badge/Google_BigQuery-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Data Analysis](https://img.shields.io/badge/Data_Analysis-00897B?style=for-the-badge)
 ![Financial Risk](https://img.shields.io/badge/Financial_Risk-FF6F00?style=for-the-badge)
 ![Business Intelligence](https://img.shields.io/badge/Business_Intelligence-5E35B1?style=for-the-badge)
 
-## Overview
+---
 
-This project demonstrates an end-to-end SQL analysis using **Google BigQuery** to evaluate a portfolio of **300 delinquent loan accounts**. The objective was to identify credit risk patterns, assess financial exposure, and generate actionable business insights to support credit risk management.
+# Overview
+
+This project presents an end-to-end SQL analysis using **Google BigQuery** to evaluate a portfolio of **300 delinquent loan accounts**.
+
+The primary objective was to identify credit risk patterns, assess financial exposure, segment customers according to business rules, and generate actionable insights to support credit risk management and strategic decision-making.
 
 ---
 
-## Business Questions
+# Dataset
+
+The analysis is based on two relational datasets:
+
+- **customers_project** – Customer demographic and financial information.
+- **loan_default_project** – Loan details, overdue balances, and delinquency metrics.
+
+Both datasets were integrated using **INNER JOIN** and analyzed through SQL aggregations, filtering, and customer segmentation techniques.
+
+---
+
+# Business Questions
 
 This project answers the following business questions:
 
@@ -28,17 +42,20 @@ This project answers the following business questions:
 
 ---
 
-## Technologies Used
+# Technologies Used
 
-- SQL
-- Google BigQuery
+- SQL (Google BigQuery)
 - Data Analysis
-- Financial Risk Analysis
+- Data Cleaning
 - Business Intelligence
+- Financial Risk Analytics
+- Customer Segmentation
 
 ---
 
-## SQL Concepts Applied
+# SQL Concepts Applied
+
+Throughout this project, the following SQL concepts were applied:
 
 - SELECT
 - INNER JOIN
@@ -50,47 +67,105 @@ This project answers the following business questions:
 - AVG()
 - COUNT()
 - LIMIT
+- CONCAT()
 - Customer Segmentation
 
 ---
 
-## Key Findings
+# Key Findings
 
 - Personal Loans represented the highest total financial exposure.
 - Business Loans presented the highest average delinquency period.
 - Italy recorded the highest average overdue amount.
 - Monthly income alone was not a strong indicator of lower financial risk.
-- A custom risk classification model successfully identified High, Medium, and Low Risk customers.
+- Customers with prolonged delinquency and high overdue balances represented the highest financial exposure.
+- A custom risk classification model successfully segmented customers into High, Medium, and Low Risk groups.
 
 ---
 
-## Risk Classification Model
+# Risk Classification Model
 
-| Risk Level | Criteria |
-|------------|----------|
-| 🔴 High Risk | ≥180 overdue days, ≥€7,000 overdue amount, monthly income < €3,000 |
+| Risk Level | Business Rules |
+|------------|----------------|
+| 🔴 High Risk | ≥180 overdue days OR ≥€7,000 overdue amount OR monthly income < €3,000 |
 | 🟡 Medium Risk | 90–179 overdue days OR overdue amount between €4,000–€6,999 OR monthly income between €3,000–€4,000 |
 | 🟢 Low Risk | Remaining customers |
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```text
-credit-default-financial-risk-analysis/
+credit-default-financial-risk-analysis
 │
 ├── README.md
-├── report/
-├── sql/
-└── images/
+├── report
+│   └── Credit_Default_Financial_Risk_Analysis.pdf
+│
+├── sql
+│   ├── 01_portfolio_kpis.sql
+│   ├── 02_loan_type_analysis.sql
+│   ├── 03_country_analysis.sql
+│   ├── 04_income_analysis.sql
+│   ├── 05_age_analysis.sql
+│   ├── 06_customers_over_90_days.sql
+│   └── 07_risk_classification.sql
+│
+└── images
+    ├── 01_cover.png
+    ├── 02_portfolio_kpis.png
+    ├── 03_key_findings.png
+    └── 04_risk_classification.png
 ```
 
 ---
 
-## Author
+# Project Preview
 
-**Luis Silva**
+## Project Cover
 
-Aspiring Data Analyst passionate about SQL, Business Intelligence, Financial Analytics, and Data Storytelling.
+![Project Cover](images/01_cover.png)
 
-**LinkedIn:** www.linkedin.com/in/luismelosilva
+---
+
+## Portfolio KPIs
+
+![Portfolio KPIs](images/02_portfolio_kpis.png)
+
+---
+
+## Key Findings
+
+![Key Findings](images/03_key_findings.png)
+
+---
+
+## Risk Classification
+
+![Risk Classification](images/04_risk_classification.png)
+
+---
+
+# Project Report
+
+The complete business report is available below:
+
+📄 **[Credit Default & Financial Risk Analysis Report](report/Credit_Default_Financial_Risk_Analysis.pdf)**
+
+---
+
+# About the Author
+
+## Luis Silva
+
+Data Analytics professional with experience in SQL, Business Intelligence, Financial Analysis, and Business Analysis.
+
+Currently focused on building data-driven solutions through SQL, Business Intelligence, and analytical storytelling while expanding expertise in Product Analytics and Financial Analytics.
+
+🔗 **LinkedIn**
+
+https://www.linkedin.com/in/luismelosilva
+
+---
+
+If you found this project interesting, feel free to connect with me on LinkedIn or explore my other repositories.
