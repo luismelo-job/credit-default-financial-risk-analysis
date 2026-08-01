@@ -120,35 +120,6 @@ credit-default-financial-risk-analysis
 
 ---
 
-# Project Preview
-
-## Project Cover
-
-![Project Cover](images/01_cover.png)
-
----
-
-## Portfolio KPIs
-
-![Portfolio KPIs](images/02_portfolio_kpis.png)
-
----
-
-## Key Findings
-
-![Key Findings](images/03_key_findings.png)
-
----
-
-## Risk Classification
-
-![Risk Classification](images/04_risk_classification.png)
-
----
-
-# Project Report
-
-The complete business report is available below:
 
 📄 **[Credit Default & Financial Risk Analysis Report](report/Credit_Default_Financial_Risk_Analysis.pdf)**
 
